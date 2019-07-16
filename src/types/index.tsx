@@ -24,14 +24,3 @@ export enum ActionTypes {
     ADD_GIFT_TO_CART = 'ADD_GIFT_TO_CART',
     UPDATE_CART_ITEM = 'UPDATE_CART_ITEM'
 }
-
-// export interface CardOwnProps {
-//     item?: Gift
-//   }
-
-// export  interface CardDispatchProps {
-//     addGiftToCart?: () => void
-// }
-
-// export  type CardProps = CardOwnProps & CardDispatchProps
-

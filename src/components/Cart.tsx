@@ -69,6 +69,15 @@ class Cart extends React.Component<Props, ClassState> {
 
     let totalPrcie: number = 0
 
+    this.state.curCartItems.map((i) => {
+      const gift: Gift[] = gifts.filter(g => g.id === i.itemId)
+      const price: number = gift[0].price
+      const cnt: number = i.itemCount
+      totalPrcie = totalPrcie + price * cnt
+      return totalPrcie
+    }
+    )
+
     return (
       <div className='Cart'>
         <p><Button variant="contained" color="primary" size='small' onClick={this.handleClick} >Update Cart</Button></p>
@@ -85,14 +94,7 @@ class Cart extends React.Component<Props, ClassState> {
             const { itemId, itemCount } = i
             const gift = gifts.filter(g => g.id === itemId)
 
-            this.state.curCartItems.map((i) => {
-              const gift: Gift[] = gifts.filter(g => g.id === i.itemId)
-              const price: number = gift[0].price
-              const cnt: number = i.itemCount
-              totalPrcie = totalPrcie + price * cnt
-              return totalPrcie
-            }
-            )
+
             return (
               <div>
                 <CartItem
