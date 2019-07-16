@@ -1,0 +1,280 @@
+/* Global settings */
+/* Global "table" column settings */
+/* line 11, ../sass/Cart.scss */
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+/* line 12, ../sass/Cart.scss */
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+/* line 13, ../sass/Cart.scss */
+.product-price {
+  float: left;
+  width: 12%;
+}
+
+/* line 14, ../sass/Cart.scss */
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+
+/* line 15, ../sass/Cart.scss */
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+/* line 16, ../sass/Cart.scss */
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* line 21, ../sass/Cart.scss */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+
+/* line 26, ../sass/Cart.scss */
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+
+/* line 29, ../sass/Cart.scss */
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+/* line 41, ../sass/Cart.scss */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
+
+/* Body/Header stuff */
+/* line 47, ../sass/Cart.scss */
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+/* line 53, ../sass/Cart.scss */
+h1 {
+  font-weight: 100;
+}
+
+/* line 57, ../sass/Cart.scss */
+label {
+  color: #aaa;
+}
+
+/* line 61, ../sass/Cart.scss */
+.shopping-cart {
+  margin-top: -45px;
+}
+
+/* Column headers */
+/* line 68, ../sass/Cart.scss */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+/* line 74, ../sass/Cart.scss */
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+/* Product entries */
+/* line 81, ../sass/Cart.scss */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+/* line 86, ../sass/Cart.scss */
+.product .product-image {
+  text-align: center;
+}
+/* line 88, ../sass/Cart.scss */
+.product .product-image img {
+  width: 100px;
+}
+/* line 94, ../sass/Cart.scss */
+.product .product-details .product-title {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+/* line 98, ../sass/Cart.scss */
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+/* line 105, ../sass/Cart.scss */
+.product .product-quantity input {
+  width: 40px;
+}
+/* line 111, ../sass/Cart.scss */
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 12px;
+  border-radius: 3px;
+}
+/* line 121, ../sass/Cart.scss */
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+/* Totals section */
+/* line 129, ../sass/Cart.scss */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 135, ../sass/Cart.scss */
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+/* line 142, ../sass/Cart.scss */
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+/* line 149, ../sass/Cart.scss */
+.totals .totals-item-total {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+/* line 154, ../sass/Cart.scss */
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+/* line 165, ../sass/Cart.scss */
+.checkout:hover {
+  background-color: #494;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  /* line 172, ../sass/Cart.scss */
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  /* line 178, ../sass/Cart.scss */
+  .column-labels {
+    display: none;
+  }
+
+  /* line 182, ../sass/Cart.scss */
+  .product-image {
+    float: right;
+    width: auto;
+  }
+  /* line 185, ../sass/Cart.scss */
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+
+  /* line 190, ../sass/Cart.scss */
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  /* line 196, ../sass/Cart.scss */
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  /* line 201, ../sass/Cart.scss */
+  .product-quantity {
+    width: 100px;
+  }
+  /* line 203, ../sass/Cart.scss */
+  .product-quantity input {
+    margin-left: 20px;
+  }
+
+  /* line 208, ../sass/Cart.scss */
+  .product-quantity:before {
+    content: 'x';
+  }
+
+  /* line 212, ../sass/Cart.scss */
+  .product-removal {
+    width: auto;
+  }
+
+  /* line 216, ../sass/Cart.scss */
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  /* line 227, ../sass/Cart.scss */
+  .product-removal {
+    float: right;
+  }
+
+  /* line 231, ../sass/Cart.scss */
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  /* line 238, ../sass/Cart.scss */
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+
+  /* line 244, ../sass/Cart.scss */
+  .totals .totals-item label {
+    width: 60%;
+  }
+  /* line 248, ../sass/Cart.scss */
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}
