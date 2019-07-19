@@ -25,7 +25,7 @@ class Card extends React.Component<Props> {
   constructor(props: any) {
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);     //////
+    this.handleClick = this.handleClick.bind(this);     
 
   }
 

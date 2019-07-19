@@ -95,16 +95,14 @@ class Cart extends React.Component<Props, ClassState> {
             const gift = gifts.filter(g => g.id === itemId)
 
 
-            return (
-              <div>
+            return (              
+                <React.Fragment key={itemId}>
                 <CartItem
-                  key={itemId}
                   item={gift[0]}
                   count={itemCount}
                   handleChange={this.handleChange}
                 />
-
-              </div>
+                </React.Fragment>
             );
           })
         }

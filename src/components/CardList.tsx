@@ -16,13 +16,11 @@ const CardList = ({ gifts }: CardListProps) => {
       {
         gifts.map((i) => {
           return (
-            <div>
+            <React.Fragment key={i.id}>
               <Card
-                key={i.id}
                 item={i}
               />
-            </div>
-
+              </React.Fragment>
           );
         })
       }
